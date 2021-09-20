@@ -11,5 +11,10 @@ and open the template in the editor.
 /* -------- GLOBAL STYLES -------- */
 
 html {
-    background-color: #999;
+    background-color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Adam', sans-serif;
+    color: white;
+    text-align: center;
 }
