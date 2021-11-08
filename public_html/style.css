@@ -9,49 +9,122 @@ and open the template in the editor.
 */
 
 /* -------- GLOBAL STYLES -------- */
-
 html {
-    background-color: #000;
+    background-color: #FFF;
 }
 body {
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     color: white;
+    margin: 0;
     font-family: Georgia, serif;
     text-align: center;
 }
+p {
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------- PRELOADER STYLES -------- */
+#loader {
+    /* for preload screen
+    height: 100vh;
+    width: 100vw; */
+}
 
 /* -------- NAVIGATION STYLES -------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0;
+}
+nav li {
+    top: 0;
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
 
 /* -------- HERO STYLES -------- */
-.hero {
-    height: 100vh;
+#hero {
+    height: calc(100vh + 15px);
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
         url(assets/kVanHisePortrait.jpg) no-repeat center top;
     background-size: cover;
+    border-bottom: 3px solid white;
 }
-.hero h1 {
+#hero a {
+    color: white;
+}
+#hero h1 {
     margin: 0;
     padding: 0.8em 0 0.6em;
     font-size: 4em;;
-    //text-shadow: 12px 2px 6px rgba(0, 0, 0, 0.15);
 }
-/* TEST
-.hero h1 span {
-    padding: 0 1em .5em;
-    border-bottom: 3px solid white;
-}*/
-.hero h1 span {
+
+#hero h1 span {
     text-decoration: none;
     position: relative;
 }
-.hero h1 span:after {
-    content: '';
+#hero h1 span:after {
+    content: "";
     width: 70%;
     position: absolute;
     left: 15%;
     bottom: -0.5em;
     border-width: 0 0 4px;
     border-style: solid;
+}
+#hero:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -90px;
+    left: calc(50% - 45px);
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 90px solid white;
+}
+
+/* -------- ABOUT STYLES -------- */
+#about {
+    background: url(assets/TwoToneBackground.jpg) no-repeat center bottom;
+    background-size: cover;
+    padding: 0 25% 0 25%;
+    text-align: center;
+}
+#about h1 {
+    margin: 0 10% 0;
+    padding-top: 5vh;
+    border-top: 3px solid white;
+}
+#aboutCopy {
+    margin: 0 0 0;
+    padding: 100px 0 5vh;
+    line-height: 2em;
+}
+
+/* -------- RESUME STYLES -------- */
+#resume {
+    padding: 0 25% 0 25%;
+}
+#resume h1, #resume p {
+    color: black;
+}
+.column {
+    display: flex;
+    justify-content: space-between;
 }
