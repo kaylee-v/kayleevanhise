@@ -8,7 +8,7 @@
     <meta name="author" content="Van Hise">
 
     <!--Style elements-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="TEST.css">
 
     <!--Script elements-->
 </head>
@@ -30,7 +30,6 @@
             </header> 
         </section>
         <section id="about">
-            <img id="headshot" src="assets/bnwHeadshot.jpg" alt="Photo of Kaylee Van Hise">
             <div id="aboutCopy">
                 <h1>Who Am I?</h1>
                 <p>I am a Front End Web Developer with 1 year of in-house experience and 2 years of freelance experience in cross-browser responsive designs, UI, CSS, HTML5, and JavaScript.
@@ -38,12 +37,22 @@
                     10 years of customer service experience in a high-volume, fast-paced environment with company-provided coursework in leadership, interpersonal relationships, and situational awareness.
                 </p>
                 <br>
-                <br>
                 <img src="assets/ArtDeco.png" alt="Art deco design">
             </div>
         </section>
         <section id="resume">
-            <h1></h1>
+            <h1>Skills</h1>
+            <div class="column">
+                <p>
+                    Lorem ipsum blah blah
+                </p>
+                <p>
+                    Lorem ipsum blah blah
+                </p>
+                <p>
+                    Lorem ipsum blah blah
+                </p>
+            </div>
         </section>
         <footer>
 
@@ -51,134 +60,3 @@
     </div>
 </body>
 </html>
-
-<!-- CSS CODE -->
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Sep 20, 2021, 10:21:02 AM
-    Author     : kaylee
-*/
-
-/* -------- GLOBAL STYLES -------- */
-html {
-    background-color: #FFF;
-}
-body {
-    margin: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-    color: white;
-    margin: 0;
-    font-family: Georgia, serif;
-    text-align: center;
-}
-p {
-    color: white;
-    font-family: Trebuchet MS, sans-serif;
-}
-a {
-    text-decoration: none;
-}
-.parallax {
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* -------- PRELOADER STYLES -------- */
-#loader {
-    /* for preload screen
-    height: 100vh;
-    width: 100vw; */
-}
-
-/* -------- NAVIGATION STYLES -------- */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 0 0;
-}
-nav li {
-    top: 0;
-    display: inline;
-    padding: 10px;
-    position: relative;
-}
-
-/* -------- HERO STYLES -------- */
-#hero {
-    height: calc(100vh + 2vw);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-        url(assets/kVanHisePortrait.jpg) no-repeat center top;
-    background-size: cover;
-    border-bottom: 3px solid white;
-}
-#hero a {
-    color: white;
-}
-#hero h1 {
-    margin: 0;
-    padding: 0.8em 0 0.6em;
-    font-size: 4em;;
-}
-
-#hero h1 span {
-    text-decoration: none;
-    position: relative;
-}
-#hero h1 span:after {
-    content: "";
-    width: 70%;
-    position: absolute;
-    left: 15%;
-    bottom: -0.5em;
-    border-width: 0 0 4px;
-    border-style: solid;
-}
-#hero:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    bottom: -8vw;
-    left: calc(50% - 2vw);
-    width: 0;
-    height: 0;
-    border-left: 4vw solid transparent;
-    border-right: 4vw solid transparent;
-    border-top: 8vw solid white;
-}
-
-/* -------- ABOUT STYLES -------- */
-#about {
-    background-color: #b5b1a5;
-    padding: 0 10% 0 10%;
-    text-align: center;
-    position: relative;
-}
-#about h1 {
-    margin: 0 10% 0;
-    padding-top: 5vh;
-    border-top: 3px solid white;
-}
-#aboutCopy {
-    margin: 0 0 0 60%;
-    padding: 10vh 0 5vh;
-}
-#headshot {
-    max-height: 450px;
-    max-width: 253px;
-    left: 10%;
-    bottom: -20px;
-    position: absolute;
-}
-
-/* -------- RESUME STYLES -------- */
-#resume {
-    color: black;
-}
